@@ -6,7 +6,7 @@ library(snowfall)
 library(rlecuyer)
 library(boot)
 source('step1.R')
-source('../../bottom up and top down control/Scripts/brw.R')
+source('brw.R')
 source('step2.class.R')
 
 
@@ -16,7 +16,7 @@ x=30
 knife=T
 obs.e.r=10
 
-sfInit(parallel=T, cpus=5, type='SOCK')
+sfInit(parallel=T, cpus=3, type='SOCK')
 sfLibrary(vars)
 sfLibrary(urca)
 sfLibrary(boot)
